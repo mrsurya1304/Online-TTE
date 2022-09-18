@@ -10,7 +10,7 @@ Most importantly this application can help reduce the wastage of paper by elimin
 4. Select a convinient path to clone the repository and click Next then from the available branches select master branch and click Next
 5. Verify the parent directory, check the details and click Finish. (Your project files will be ready in the folder you specified)
 6. You can click Open Project to open your project You can ignore the project problems dialog
-7. Verify you have the onlinette.sql file for the dummy databases. Go to the cloned project folder and Click OnlineTTE -> database.
+7. Verify you have the onlinette.sql file for the dummy databases. Go to the cloned project folder and Click OnlineTTE -> database. You can also download it on the database folder in Github
 8. Open XAAMP server and start the Apache and MySQL services and open the MySQL admin page (phpmyadmin).
 9. Click on New to create a new database and name it onlinette then click create.
 10. Click on the onlinette database and click on Import
