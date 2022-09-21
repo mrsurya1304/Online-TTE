@@ -94,6 +94,11 @@ Most importantly this application can help reduce the wastage of paper by elimin
 # Demo
 Link: https://youtu.be/Ze44dY_8jFY
 
+# Deployed with executable JAR file
+Link: https://drive.google.com/drive/folders/1xofZ6FI3LeGFFprJETP355V6MF435iZL?usp=sharing
+Download the folder in the above link into a desired path
+Go into that folder named executablejar and click on the OnlineTTE.jar file to run the application
+
 # Future ideas
 - Bringing in scanning options so ID proof can be scanned and automatic verification/checking can be done.
 - Controls which do not require a TTE. Automatic detection of ID proof if placed on the entrance of a coach.
