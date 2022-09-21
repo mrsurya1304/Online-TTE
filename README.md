@@ -1,21 +1,17 @@
 # OnlineTTE
-OnlineTTE is a digital ticket checking app which aims to digitalize the manual checking (currently done by paper ticket charts) of train ticket reservations in India.
-This app can help the TTE check tickets faster, reduce the number of TTEs, collect fines from rule violators and generate reports for the Indian Railways.
-Most importantly this application can help reduce the wastage of paper by eliminating ticket charts.
+- OnlineTTE is a digital ticket checking app built in Java (NetBeans IDE and SQLite database) which aims to digitalize the manual checking (currently done by paper ticket charts) of train ticket reservations in India.
+- This app can help the TTE check tickets faster, reduce the number of TTEs, collect fines from rule violators and generate reports for the Indian Railways.
+- Most importantly this application can help reduce the wastage of paper by eliminating ticket charts.
 
 # How to run this application on your computer from GitHub
 1. Copy the repository link from Github under the Code section
 2. Open Netbeans IDE Click on Team -> Git -> Clone and Paste the copied repository link on the repository link field
-3. Click on Proxy Configuration and click on Test connection. Ensure you get a tick then click OK.
-4. Select a convinient path to clone the repository and click Next then from the available branches select master branch and click Next
+3. Click on Proxy Configuration and click on Test connection. Ensure you get a successfull connection then click OK.
+4. Select a convinient path to clone the repository and click Next
+5. From the available branches select master branch and click Next
 5. Verify the parent directory, check the details and click Finish. (Your project files will be ready in the folder you specified)
 6. You can click Open Project to open your project You can ignore the project problems dialog
-7. Verify you have the onlinette.sql file for the dummy databases. Go to the cloned project folder and Click OnlineTTE -> database. You can also download it on the database folder in Github
-8. Open XAAMP server and start the Apache and MySQL services and open the MySQL admin page (phpmyadmin).
-9. Click on New to create a new database and name it onlinette then click create.
-10. Click on the onlinette database and click on Import
-11. Click on Choose file and select the onlinette.sql file then click Go. The required tables for the project will be added
-12. Now return to NetBeans and run the project. The project will now work. Enjoy
+8. Click on the play button to run the project
 
 # How to use OnlineTTE
 - You can log in to the system by entering the correct credentials provided to you as a TTE.
@@ -35,6 +31,7 @@ Most importantly this application can help reduce the wastage of paper by elimin
 - Contains two fields to enter username and password
 - Twol buttons, one to log in and one to exit the system
 - Appropriate exception handling done to handle incorrect and empty inputs
+- Checks credentials with the database then logs in the user
 
 ## Select train
 - We have a drop down to select the train number for which the TTE needs to check tickets
@@ -43,6 +40,7 @@ Most importantly this application can help reduce the wastage of paper by elimin
 
 ## Passenger details
 - There is a JTable which displays all the passenger details who are travelling on the specified coach and date taken from the database using a query.
+- The same passenger details are queried for any date selected as this is just a prototype and the entries are just dummies.
 - When we click on a passenger record his name is displayed on the text box and you can now check or uncheck the ticket.
 - You can check the tickets by clicking on the check checkbox and clicking OK. The status column turns green and changes status to 'Checked'
 - Unchecking the checkbox and clicking OK reverts the checked status back to unchecked (Red)
@@ -60,9 +58,10 @@ Most importantly this application can help reduce the wastage of paper by elimin
 
 ## Reports
 - Reports of checked, unchecked and fined passengers taken from the database using multiple queries
-- Details can be sent to Indian Railways for their further use
+- Details can be sent to Indian Railways for their further use.
+- After reports generation the fines table is truncated, all metadata is deleted so it will be empty for the next checking process.
 
-# OnlineTTE Database details
+# OnlineTTE Database details (SQLite used)
 
 ## Credentials
 - Fields contained : Username and Password
@@ -96,8 +95,10 @@ Link: https://youtu.be/Ze44dY_8jFY
 
 # Deployed with executable JAR file
 Link: https://drive.google.com/drive/folders/1xofZ6FI3LeGFFprJETP355V6MF435iZL?usp=sharing
-Download the folder in the above link into a desired path
-Go into that folder named executablejar and click on the OnlineTTE.jar file to run the application
+
+Download the folder in the above link and unzip it into a desired path
+
+Go into the unzipped folder named executablejar and click on the OnlineTTE.jar file to run the application
 
 # Future ideas
 - Bringing in scanning options so ID proof can be scanned and automatic verification/checking can be done.
