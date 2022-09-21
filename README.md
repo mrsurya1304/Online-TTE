@@ -84,11 +84,11 @@
 - Contains fields to know how much fine amount is collected and what reason they were fined for.
 
 # How the application looks like
-![alt text](https://github.com/mrsurya1304/OnlineTTE/blob/master/samples/Sample1.png)
-![alt text](https://github.com/mrsurya1304/OnlineTTE/blob/master/samples/Sample2.png)
-![alt text](https://github.com/mrsurya1304/OnlineTTE/blob/master/samples/Sample3.png)
-![alt text](https://github.com/mrsurya1304/OnlineTTE/blob/master/samples/Sample4.png)
-![alt text](https://github.com/mrsurya1304/OnlineTTE/blob/master/samples/Sample5.png)
+![alt text](https://github.com/mrsurya1304/Online-TTE/blob/master/samples/Sample1.png)
+![alt text](https://github.com/mrsurya1304/Online-TTE/blob/master/samples/Sample2.png)
+![alt text](https://github.com/mrsurya1304/Online-TTE/blob/master/samples/Sample3.png)
+![alt text](https://github.com/mrsurya1304/Online-TTE/blob/master/samples/Sample4.png)
+![alt text](https://github.com/mrsurya1304/Online-TTE/blob/master/samples/Sample5.png)
 
 # Demo
 Link: https://youtu.be/Ze44dY_8jFY
