@@ -47,8 +47,8 @@ public class Login extends javax.swing.JFrame {
     public void Connect() //Method to connect to the database
     {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            con= DriverManager.getConnection("jdbc:mysql://localhost/onlinette","root","");
+            Class.forName("org.sqlite.JDBC");
+            con= DriverManager.getConnection("jdbc:sqlite::resource:onlinette.db");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(this,"Error");

@@ -46,8 +46,8 @@ public class report extends javax.swing.JFrame {
     public void Connect()   //Method to connect to the database
     {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            con= DriverManager.getConnection("jdbc:mysql://localhost/onlinette","root","");
+            Class.forName("org.sqlite.JDBC");
+            con= DriverManager.getConnection("jdbc:sqlite::resource:onlinette.db");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Passengerdetails1.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(this,"Error");
@@ -263,7 +263,7 @@ public class report extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         try {   //Deleting the data of the fines table after completion of checking
-            pst=con.prepareStatement("truncate table fines;");
+            pst=con.prepareStatement("delete from fines;");
             pst.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(report.class.getName()).log(Level.SEVERE, null, ex);
