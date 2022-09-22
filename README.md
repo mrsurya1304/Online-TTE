@@ -3,7 +3,7 @@
 - This app can help the TTE check tickets faster, reduce the number of TTEs, collect fines from rule violators and generate reports for the Indian Railways.
 - Most importantly this application can help reduce the wastage of paper by eliminating ticket charts.
 
-# How to run this application on your computer from GitHub
+# How to run this application on your computer in NetBeansIDE from GitHub
 1. Copy the repository link from Github under the Code section
 2. Open Netbeans IDE Click on Team -> Git -> Clone and Paste the copied repository link on the repository link field
 3. Click on Proxy Configuration and click on Test connection. Ensure you get a successfull connection then click OK.
@@ -12,6 +12,8 @@
 5. Verify the parent directory, check the details and click Finish. (Your project files will be ready in the folder you specified)
 6. You can click Open Project to open your project You can ignore the project problems dialog
 8. Click on the play button to run the project
+
+Demo Link: https://youtu.be/_PkwmQ9LNuQ
 
 # How to use OnlineTTE
 - You can log in to the system by entering the correct credentials provided to you as a TTE.
